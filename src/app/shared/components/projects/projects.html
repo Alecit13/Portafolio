@@ -1,0 +1,36 @@
+<section id="projects" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-primary text-center">
+      {{ 'projects.title' | translate }}
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      @for (project of projects; track project.title){
+      <div class="bg-[#191919] rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+        <img [src]="project.image" [alt]="project.title" class="w-full h-48 object-cover">
+        <div class="p-5 flex flex-col justify-between h-[calc(100%-12rem)]">
+          <div>
+            <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
+            <p class="text-secondary text-sm mb-4">{{ project.description }}</p>
+            <div class="flex flex-wrap gap-2 text-xs text-primary">
+              <span *ngFor="let tech of project.technologies" class="bg-[#323232] px-2 py-1 rounded">{{ tech }}</span>
+            </div>
+          </div>
+          <a [href]="project.link" target="_blank" class="mt-4 inline-block text-sm text-primary hover:underline">
+            {{ 'projects.view' | translate }}
+          </a>
+        </div>
+      </div>
+      }
+    </div>
+
+    <!-- Línea para Experiencia -->
+    <div class="border-t border-gray-600 mt-20 mb-6"></div>
+    <h3 class="text-xl sm:text-2xl font-semibold text-center text-secondary mb-8">
+      {{ 'projects.experience' | translate }}
+    </h3>
+    <p class="text-center text-sm text-secondary max-w-2xl mx-auto">
+      {{ 'projects.experience_desc' | translate }}
+    </p>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "hello": "Hola, mi nombre es",
+    "roles": "Analista de Datos | Desarrollador Fullstack | Freelancer Tech",
+    "desc": "Soy estudiante de 8vo ciclo de Ciencias de la Computación enfocado en datos, web y automatización.",
+    "view_projects": "Ver proyectos",
+    "contact_me": "Contáctame"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "projects": {
+    "title": "Proyectos y Experiencia",
+    "view": "Ver Proyecto",
+    "experience": "Experiencia Adicional",
+    "experience_desc": "Durante mi camino académico y como freelancer, he creado y automatizado múltiples soluciones con Angular, Python y Shopify. ¡Más pronto!"
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy estudiante de octavo ciclo de Ciencias de la Computación en Perú, apasionado por el análisis de datos, la automatización y el desarrollo de aplicaciones web escalables. Mi formación académica me ha permitido participar en proyectos de inteligencia artificial, scraping, dashboards y desarrollo fullstack.",
+    "subtext": "Fuera del entorno académico, he trabajado como freelancer creando sitios web, automatizando procesos y diseñando soluciones con Angular, Python y Shopify."
+  },
+  "blog": {
+    "title": "Blog y Artículos",
+    "read_more": "Leer más"
+  },
+  "contact": {
+    "title": "Conectemos",
+    "text": "Estoy abierto a proyectos freelance, colaboraciones o simplemente compartir ideas. ¡No dudes en escribirme!"
+  }
+
+
+}

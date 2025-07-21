@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Crypto Insights",
+    "description": "ML tool to identify tokens with institutional support using CRISP-DM.",
+    "technologies": ["Python", "Streamlit", "scikit-learn"],
+    "image": "assets/img/alpha-logo.jpeg",
+    "link": "https://github.com/tuusuario/crypto-insights"
+  },
+  {
+    "title": "Andean Elite Travel Website",
+    "description": "Custom tour website built with Angular and WooCommerce integration.",
+    "technologies": ["Angular", "WordPress", "WooCommerce"],
+    "image": "assets/img/AndeanElite.png",
+    "link": "https://andeanelite.com"
+  },
+  {
+    "title": "Facial Emotion Classifier",
+    "description": "Classifier trained on FER2013 with EfficientNet-B2 using PyTorch.",
+    "technologies": ["PyTorch", "Google Colab", "CNN"],
+    "image": "assets/img/Emotiva-Facial-Emotional.png",
+    "link": "https://github.com/tuusuario/emotion-model"
+  }
+]

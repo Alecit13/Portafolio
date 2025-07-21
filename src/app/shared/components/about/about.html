@@ -1,0 +1,22 @@
+<section id="about" class="bg-black text-white py-20 px-6">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- Imagen opcional -->
+    <div class="flex justify-center">
+      <img src="assets/img/Foto-Profile.png" alt="My profile" class="w-80 h-auto object-cover rounded-full shadow-lg hidden md:block">
+    </div>
+
+    <!-- Texto -->
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-6">
+        {{ 'about.title' | translate }}
+      </h2>
+      <p class="text-secondary text-sm sm:text-base leading-relaxed">
+        {{ 'about.description' | translate }}
+      </p>
+      <p class="text-secondary text-sm sm:text-base leading-relaxed mt-4">
+        {{ 'about.subtext' | translate }}
+      </p>
+    </div>
+  </div>
+</section>

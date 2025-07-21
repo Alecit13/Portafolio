@@ -1,0 +1,22 @@
+<section id="skills" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-12 text-center">
+      {{ 'skills.title' | translate }}
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      @for (category of skills; track category.category) {
+        <div class="bg-[#191919] rounded-lg p-6 shadow hover:shadow-xl transition">
+          <h3 class="text-xl text-primary font-semibold mb-4">{{ category.category }}</h3>
+          <div class="flex flex-wrap gap-3">
+            @for (skill of category.skills; track skill) {
+              <span class="bg-[#323232] border border-primary text-primary px-3 py-1 text-sm rounded-full">
+                {{ skill }}
+              </span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+<!-- navbar.component.html -->
+<nav class="sticky top-0 z-50 bg-black text-white shadow-md">
+  <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+    <img src="assets/img/Logo.png" class="w-20">
+    <ul class="flex gap-6 font-medium">
+      <li><a href="#hero" class="hover:text-primary transition">{{ 'navbar.home'|translate }}</a></li>
+      <li><a href="#projects" class="hover:text-primary transition">{{ 'navbar.projects'|translate }}</a></li>
+      <li><a href="#skills" class="hover:text-primary transition">{{ 'navbar.skills'|translate }}</a></li>
+      <li><a href="#about" class="hover:text-primary transition">{{ 'navbar.about'|translate }}</a></li>
+      <li><a href="#contact" class="hover:text-primary transition">{{ 'navbar.contact'|translate }}</a></li>
+      <select (change)="changeLang(($event))" class="bg-background text-white border px-2 py-1">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
+    </ul>
+  </div>
+</nav>

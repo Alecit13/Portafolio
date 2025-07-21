@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "hello": "Hi, my name is",
+    "roles": "Data Analyst | Fullstack Developer | Tech Freelancer",
+    "desc": "I'm an 8th-cycle Computer Science student focused on data, web apps and automation.",
+    "view_projects": "View Projects",
+    "contact_me": "Contact Me"
+  },
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "Projects & Experience",
+    "view": "View Project",
+    "experience": "Additional Experience",
+    "experience_desc": "During my academic and freelance journey, I've built and automated multiple solutions using Angular, Python, and Shopify. More coming soon!"
+  },
+  "skills": {
+    "title": "Skills & Technologies"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm an 8th-cycle Computer Science student from Peru, passionate about data analysis, automation, and scalable web applications. My academic background has allowed me to participate in projects involving artificial intelligence, scraping, dashboards, and fullstack development.",
+    "subtext": "Outside of academics, I've worked as a freelancer building websites, automating processes, and designing solutions with Angular, Python, and Shopify."
+  },
+  "blog": {
+    "title": "Blog & Writings",
+    "read_more": "Read more"
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "text": "I'm open to freelance projects, collaborations, or simply sharing ideas. Feel free to reach out!"
+  }
+
+}
+

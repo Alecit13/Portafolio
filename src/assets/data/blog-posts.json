@@ -1,0 +1,20 @@
+[
+  {
+    "title": "How I Built a Token Ranking ML Model Using CRISP-DM",
+    "date": "2025-07-10",
+    "summary": "A breakdown of the CRISP-DM process applied to token classification using scikit-learn and Streamlit.",
+    "link": "https://medium.com/@alejandrocuadros/token-ml-crispdm"
+  },
+  {
+    "title": "Deploying Angular Apps with SSR (Angular Universal + Netlify)",
+    "date": "2025-06-28",
+    "summary": "Lessons learned deploying my portfolio with Angular SSR and optimizing SEO for Google indexing.",
+    "link": "https://dev.to/alejandrocuadros/angular-ssr-seo"
+  },
+  {
+    "title": "Scraping Web Data with Selenium: Automating Travel Portals",
+    "date": "2025-06-01",
+    "summary": "Using Python and Selenium to automate data extraction from dynamic travel websites, with tips for anti-bot evasion.",
+    "link": "https://github.com/tuusuario/scraping-travel"
+  }
+]
