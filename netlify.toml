@@ -1,0 +1,6 @@
+[build]
+  command = "ng build --configuration production"
+  publish = "dist/Portafolio/browser"
+
+[functions]
+  node_bundler = "esbuild"
