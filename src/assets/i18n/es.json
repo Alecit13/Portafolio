@@ -34,7 +34,23 @@
   "contact": {
     "title": "Conectemos",
     "text": "Estoy abierto a proyectos freelance, colaboraciones o simplemente compartir ideas. ¡No dudes en escribirme!"
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "items": [
+      {
+        "role": "Desarrollador Web – Consultor Independiente",
+        "date": "Mar 2024 – Actualidad",
+        "description": "Desarrollé y mantuve sitios web para tres marcas emergentes, adaptadas a distintos segmentos del mercado, incluyendo UI/UX y diseño responsive.",
+        "tech": "Tecnologías: Angular, TailwindCSS, WordPress, Shopify"
+      },
+      {
+        "role": "Asistente de Datos – Expocobre",
+        "date": "Oct 2023 – Ene 2024",
+        "description": "Recolecté y organicé datos de clientes utilizando herramientas de scraping y software visual para ampliar la base de datos comercial.",
+        "tech": "Tecnologías: Python, Selenium, Excel, herramientas de scraping visual"
+      }
+    ]
   }
-
 
 }

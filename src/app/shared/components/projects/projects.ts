@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {TranslatePipe} from '@ngx-translate/core';
+import {Component, OnInit} from '@angular/core';
+import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 import {NgForOf} from '@angular/common';
 
 
@@ -20,13 +20,19 @@ interface Project {
   templateUrl: './projects.html',
   styleUrl: './projects.css'
 })
-export class Projects {
+export class Projects implements OnInit{
   projects: Project[] = [];
+  experienceItems: any[] = [];
 
   ngOnInit(): void {
     fetch('assets/data/projects.json')
       .then(res => res.json())
       .then(data => this.projects = data);
+
+    this.translateService.get('experience.items').subscribe((items) => {
+      this.experienceItems = items;
+    });
   }
 
+  constructor(private translateService: TranslateService) {}
 }

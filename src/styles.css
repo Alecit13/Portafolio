@@ -1,2 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+@layer utilities {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15.2ch;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  .animate-typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid currentColor;
+    display: inline-block;
+    animation: typewriter 2.5s steps(19, end) forwards, blink 0.7s step-end infinite;
+  }
+}

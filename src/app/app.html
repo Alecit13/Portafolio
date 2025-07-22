@@ -1,2 +1,27 @@
-<app-navbar></app-navbar>
-<router-outlet />
+<div class="relative min-h-screen bg-background text-foreground">
+  <!-- Navbar + Select de idioma -->
+  <div class="relative">
+    <app-navbar></app-navbar>
+
+    <!-- Selector de idioma -->
+    <select
+      (change)="changeLang($event)"
+      class="absolute top-10 right-4 px-3 py-1 text-sm rounded-xl shadow z-50"
+    >
+      <option value="en">EN</option>
+      <option value="es">ES</option>
+    </select>
+  </div>
+
+  <!-- Contenido principal -->
+  <router-outlet></router-outlet>
+
+  <!-- Botón flotante de tema -->
+  <button
+    class="fixed bottom-5 right-5 p-3 text-3xl rounded-full bg-primary  shadow-lg z-50 transition-all duration-300 ease-in-out hover:rotate-180 hover:scale-110"
+    (click)="toggleTheme()"
+    aria-label="Toggle theme"
+  >
+    <fa-icon [icon]="isDark ? faSun : faMoon"></fa-icon>
+  </button>
+</div>
