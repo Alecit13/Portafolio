@@ -39,16 +39,22 @@
     "title": "Experiencia Profesional",
     "items": [
       {
-        "role": "Desarrollador Web – Consultor Independiente",
-        "date": "Mar 2024 – Actualidad",
-        "description": "Desarrollé y mantuve sitios web para tres marcas emergentes, adaptadas a distintos segmentos del mercado, incluyendo UI/UX y diseño responsive.",
-        "tech": "Tecnologías: Angular, TailwindCSS, WordPress, Shopify"
+        "role": "Desarrollador Web",
+        "company": "Freelance / Consultor Independiente",
+        "duration": "6+ meses",
+        "description": "Creación y optimización de sitios web adaptados a identidades de marca únicas y necesidades del usuario.",
+        "impact": "Mejoré la presencia online y el nivel de interacción de tres marcas emergentes mediante diseños responsivos y optimizados para SEO.",
+        "skills": ["UI/UX", "Diseño Responsivo", "Comunicación con Clientes", "Optimización Web"],
+        "tech": "Angular, TailwindCSS, WordPress, Shopify"
       },
       {
-        "role": "Asistente de Datos – Expocobre",
-        "date": "Oct 2023 – Ene 2024",
-        "description": "Recolecté y organicé datos de clientes utilizando herramientas de scraping y software visual para ampliar la base de datos comercial.",
-        "tech": "Tecnologías: Python, Selenium, Excel, herramientas de scraping visual"
+        "role": "Asistente de Datos",
+        "company": "Expocobre",
+        "duration": "4 meses",
+        "description": "Recolección y estructuración de datos de prospectos utilizando herramientas automatizadas para alimentar bases de datos internas.",
+        "impact": "Aumenté la base de clientes potenciales en un 25% mediante el procesamiento organizado de datos y técnicas de scraping.",
+        "skills": ["Recolección de Datos", "Automatización", "Reportes en Excel", "Atención al Detalle"],
+        "tech": "Python, Selenium, Excel, Octoparse"
       }
     ]
   }

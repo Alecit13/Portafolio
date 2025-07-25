@@ -1,52 +1,98 @@
-<section id="projects" class="  py-20 px-6">
+<section id="projects" class="py-20 px-6">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-primary text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-primary text-center">
       {{ 'projects.title' | translate }}
     </h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-      @for (project of projects; track project.title){
-      <div class="dark:bg-[#191919] bg-[#e3e3e3] rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
-        <img [src]="project.image" [alt]="project.title" class="w-full h-48 object-cover">
-        <div class="p-5 flex flex-col justify-between h-[calc(100%-12rem)]">
-          <div>
-            <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
-            <p class="text-secondary text-sm mb-4">{{ project.description }}</p>
-            <div class="flex flex-wrap gap-2 text-xs text-primary">
-              <span *ngFor="let tech of project.technologies" class="dark:bg-[#323232] bg-[#c3c3c3] px-2 py-1 rounded">{{ tech }}</span>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      @for (project of projects; track project.title) {
+        <div class="group relative rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-1 bg-white dark:bg-[#191919] border border-gray-200 dark:border-gray-800">
+          <img [src]="project.image" [alt]="project.title" class="w-full h-48 object-cover">
+
+          @if (project.type) {
+            <!-- Etiqueta de tipo (opcional) -->
+            <div  [ngClass]="{
+                 'bg-blue-600': project.type === 'Client Project',
+                 'bg-green-600': project.type === 'Data Science',
+                 'bg-purple-600': project.type === 'AI',
+                 'bg-yellow-600': project.type === 'Web App',
+                 'bg-pink-600': project.type === 'Experiment'
+               }"  class="absolute top-3 right-3 bg-primary text-white text-xs font-semibold px-2 py-1 rounded">
+              {{ project.type }}
             </div>
+          }
+
+
+          <div class="p-5 flex flex-col justify-between h-full">
+            <div>
+              <h3 class="text-lg font-semibold mb-1 text-primary">{{ project.title }}</h3>
+              <p class="text-sm text-secondary mb-3 leading-snug">{{ project.description }}</p>
+
+              <!-- Tecnologías -->
+              <div class="flex flex-wrap gap-2 text-xs text-primary mb-3">
+                @for (tech of project.technologies; track $index) {
+                  <span class="bg-gray-200 dark:bg-[#2a2a2a] px-2 py-1 rounded-full">{{ tech }}</span>
+                }
+              </div>
+
+              @if (project.impact) {
+                <!-- Impacto o logro destacado (opcional) -->
+                <p  class="text-xs italic text-gray-500 dark:text-gray-400 mb-2">
+                  {{ project.impact }}
+                </p>
+              }
+            </div>
+
+            <!-- Botón -->
+            <a [href]="project.link" target="_blank" class="mt-3 text-sm font-medium text-primary hover:underline">
+              {{ 'projects.view' | translate }}
+            </a>
           </div>
-          <a [href]="project.link" target="_blank" class="mt-4 inline-block text-sm text-primary hover:underline">
-            {{ 'projects.view' | translate }}
-          </a>
         </div>
-      </div>
       }
     </div>
-
-    <!-- Línea para Experiencia -->
-    <div class="border-t border-gray-600 mt-20 mb-6"></div>
-    <h3 class="text-xl sm:text-2xl font-semibold text-center text-secondary mb-8">
-      {{ 'projects.experience' | translate }}
-    </h3>
-    <p class="text-center text-sm text-secondary max-w-2xl mx-auto">
-      {{ 'projects.experience_desc' | translate }}
-    </p>
   </div>
 </section>
-<section id="experience" class="  py-20 px-6">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-primary text-center">
+<section id="experience" class="py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-16 text-primary text-center">
       {{ 'experience.title' | translate }}
     </h2>
 
-    <div class="space-y-8">
+    <!-- Contenedor de línea de tiempo -->
+    <div class="relative border-l-2 border-primary/50 pl-10 space-y-16">
+
       @for (item of experienceItems; track item.role) {
-        <div class="dark:bg-[#191919] bg-[#e3e3e3] p-6 rounded-lg shadow-md hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold text-primary">{{ item.role }}</h3>
-          <p class="text-sm text-secondary italic mb-2">{{ item.date }}</p>
-          <p class="text-sm  mb-2">{{ item.description }}</p>
-          <p class="text-xs text-primary">{{ item.tech }}</p>
+        <div class="relative group flex items-start">
+
+          <!-- PUNTO CIRCULAR CENTRAL -->
+          <div class="absolute -left-[51px] top-2 transform -translate-y-1/2 w-5 h-5 bg-black dark:bg-white rounded-full z-10"></div>
+
+          <!-- TARJETA -->
+          <div class="w-full bg-[#f4f4f4] dark:bg-[#191919] p-6 rounded-lg shadow-md hover:shadow-xl transition-all border border-primary/10">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+              <h3 class="text-xl font-semibold text-primary">{{ item.role }}</h3>
+              <span class="text-sm text-white/60 italic mt-1 sm:mt-0">{{ item.duration }}</span>
+            </div>
+
+            <p class="text-sm text-secondary mb-1 font-medium">{{ item.company }}</p>
+            <p class="text-sm mb-3">{{ item.description }}</p>
+
+            <p class="text-sm mb-2"><strong>Impacto:</strong> {{ item.impact }}</p>
+
+            <div class="text-sm mb-3">
+              <strong>Habilidades:</strong>
+              <div class="mt-1 flex flex-wrap gap-2">
+                @for (skill of item.skills; track $index) {
+                  <span  class="inline-block border-black dark:border-white border-[1px] bg-primary text-black dark:text-white px-2 py-1 rounded-full text-xs">
+                  {{ skill }}
+                </span>
+                }
+              </div>
+            </div>
+
+            <p class="text-xs text-primary font-medium">Tecnologías: {{ item.tech }}</p>
+          </div>
         </div>
       }
     </div>

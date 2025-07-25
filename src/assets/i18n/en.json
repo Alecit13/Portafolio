@@ -35,23 +35,31 @@
     "title": "Let's Connect",
     "text": "I'm open to freelance projects, collaborations, or simply sharing ideas. Feel free to reach out!"
   },
+
   "experience": {
     "title": "Professional Experience",
     "items": [
       {
-        "role": "Web Developer – Independent Consultant",
-        "date": "Mar 2024 – Present",
-        "description": "Designed and maintained websites for three emerging brands, tailored for different market segments, including UI/UX and responsiveness.",
-        "tech": "Tech stack: Angular, TailwindCSS, WordPress, Shopify"
+        "role": "Web Developer",
+        "company": "Freelance / Independent Consultant",
+        "duration": "6+ months",
+        "description": "Created and optimized websites tailored to unique brand identities and user needs.",
+        "impact": "Improved online presence and engagement for three emerging brands through responsive, SEO-friendly designs.",
+        "skills": ["UI/UX", "Responsive Design", "Client Communication", "Web Optimization"],
+        "tech": "Angular, TailwindCSS, WordPress, Shopify"
       },
       {
-        "role": "Data Assistant – Expocobre",
-        "date": "Oct 2023 – Jan 2024",
-        "description": "Collected and organized client data using scraping tools and visual software to support database expansion for commercial prospects.",
-        "tech": "Tech stack: Python, Selenium, Excel, Visual scraping tools"
+        "role": "Data Assistant",
+        "company": "Expocobre",
+        "duration": "4 months",
+        "description": "Gathered and structured prospect data using automation tools for internal databases.",
+        "impact": "Increased lead base by 25% through organized datasets and scraping processes.",
+        "skills": ["Data Collection", "Automation", "Excel Reporting", "Attention to Detail"],
+        "tech": "Python, Selenium, Excel, Octoparse"
       }
     ]
   }
+
 
 }
 

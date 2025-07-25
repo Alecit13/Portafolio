@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
-import {NgForOf} from '@angular/common';
+import {NgClass} from '@angular/common';
 
 
 interface Project {
@@ -8,14 +8,16 @@ interface Project {
   description: string;
   technologies: string[];
   image: string;
+  type:string;
   link: string;
+  impact: string;
 }
 
 @Component({
   selector: 'app-projects',
   imports: [
     TranslatePipe,
-    NgForOf
+    NgClass
   ],
   templateUrl: './projects.html',
   styleUrl: './projects.css'

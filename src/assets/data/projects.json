@@ -4,20 +4,71 @@
     "description": "ML tool to identify tokens with institutional support using CRISP-DM.",
     "technologies": ["Python", "Streamlit", "scikit-learn"],
     "image": "assets/img/alpha-logo.jpeg",
-    "link": "https://github.com/tuusuario/crypto-insights"
+    "link": "https://github.com/tuusuario/crypto-insights",
+    "type": "Data Science",
+    "impact": "Helped visualize trends in institutional crypto holdings."
   },
   {
     "title": "Andean Elite Travel Website",
-    "description": "Custom tour website built with Angular and WooCommerce integration.",
-    "technologies": ["Angular", "WordPress", "WooCommerce"],
+    "description": "Custom tour website built entirely in Angular with dynamic routing and SEO features.",
+    "technologies": ["Angular", "TailwindCSS"],
     "image": "assets/img/AndeanElite.png",
-    "link": "https://andeanelite.com"
+    "link": "https://andeanelite.com",
+    "type": "Client Project",
+    "impact": "Improved brand presence with responsive and SEO-ready design."
   },
   {
     "title": "Facial Emotion Classifier",
     "description": "Classifier trained on FER2013 with EfficientNet-B2 using PyTorch.",
     "technologies": ["PyTorch", "Google Colab", "CNN"],
     "image": "assets/img/Emotiva-Facial-Emotional.png",
-    "link": "https://github.com/tuusuario/emotion-model"
+    "link": "https://github.com/tuusuario/emotion-model",
+    "type": "AI",
+    "impact": "Achieved over 65% accuracy in emotion detection across 7 classes."
+  },
+  {
+    "title": "Infinity Luxury Travel",
+    "description": "Luxury travel web app developed in Angular with a premium UI/UX and multilingual routing.",
+    "technologies": ["Angular", "TailwindCSS", "i18n"],
+    "image": "assets/img/infinity-luxury.png",
+    "link": "https://infinityluxury.pe",
+    "type": "Client Project",
+    "impact": "Elevated the brand with a polished, high-end digital experience."
+  },
+  {
+    "title": "Travelbook Store",
+    "description": "E-commerce travel product site built in Shopify with customized sections and liquid templates.",
+    "technologies": ["Shopify", "Liquid", "JavaScript", "HTML"],
+    "image": "assets/img/travelbook.png",
+    "link": "https://travelbook.pe",
+    "type": "Client Project",
+    "impact": "Deployed full store with optimized layout, custom filtering, and integrated reservation forms."
+  },
+  {
+    "title": "EMOTIVA Dashboard Emocional",
+    "description": "Emotion analysis dashboard using visual input and FER2013-based classifier.",
+    "technologies": ["Streamlit", "Pandas", "Matplotlib", "PyTorch"],
+    "image": "assets/img/emotiva-dashboard.png",
+    "link": "https://github.com/tuusuario/emotiva-dashboard",
+    "type": "AI",
+    "impact": "Enables teachers to assess classroom emotional states through image-based detection."
+  },
+  {
+    "title": "Aviator AI Predictor",
+    "description": "AI model designed to predict optimal cash-out moments in a simulated risk game.",
+    "technologies": ["Python", "Pandas", "Machine Learning"],
+    "image": "assets/img/aviator-ai.png",
+    "link": "https://github.com/tuusuario/aviator-ai",
+    "type": "Data Science",
+    "impact": "Simulated game decision support tool with predictive models for cash-out timing."
+  },
+  {
+    "title": "Sign Language Recognition Prototype",
+    "description": "Proof-of-concept CNN model to detect basic Peruvian sign language gestures.",
+    "technologies": ["Python", "OpenCV", "TensorFlow"],
+    "image": "assets/img/sign-language.png",
+    "link": "https://github.com/tuusuario/sign-language-ai",
+    "type": "AI",
+    "impact": "Early-stage prototype for real-time gesture recognition from webcam input."
   }
 ]
