@@ -1,22 +1,123 @@
 [
   {
     "category": "Data Analysis",
-    "skills": ["Python", "Pandas", "Numpy", "Power BI", "Scikit-learn"]
+    "skills": [
+      {
+        "name": "Python",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Pandas",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+      },
+      {
+        "name": "Numpy",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+      },
+      {
+        "name": "Power BI",
+        "image": "https://cdn.worldvectorlogo.com/logos/power-bi-1.svg"
+      },
+      {
+        "name": "Scikit-learn",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+      }
+    ]
   },
   {
     "category": "Frontend",
-    "skills": ["Angular", "TypeScript", "Tailwind", "HTML", "CSS"]
+    "skills": [
+      {
+        "name": "Angular",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+      },
+      {
+        "name": "TypeScript",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+      },
+      {
+        "name": "Tailwind",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+      },
+      {
+        "name": "HTML",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+      },
+      {
+        "name": "CSS",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+      }
+    ]
   },
   {
     "category": "Backend",
-    "skills": ["Node.js", "Express", "FastAPI", "MongoDB", "PostgreSQL"]
+    "skills": [
+      {
+        "name": "Node.js",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+      },
+      {
+        "name": "Express",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+      },
+      {
+        "name": "FastAPI",
+        "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original-wordmark.svg"
+      },
+      {
+        "name": "MongoDB",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+      }
+    ]
   },
   {
     "category": "Automation",
-    "skills": ["Selenium", "Scrapy", "GitHub Actions", "Python Scripts"]
+    "skills": [
+      {
+        "name": "Selenium",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
+      },
+      {
+        "name": "Scrapy",
+        "image": "assets/img/scrapy-logo.webp"
+      },
+      {
+        "name": "GitHub Actions",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+      },
+      {
+        "name": "Python Scripts",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      }
+    ]
   },
   {
     "category": "Tools & CMS",
-    "skills": ["Git", "GitHub", "WordPress", "Shopify", "Figma"]
+    "skills": [
+      {
+        "name": "Git",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+      },
+      {
+        "name": "GitHub",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+      },
+      {
+        "name": "WordPress",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+      },
+      {
+        "name": "Shopify",
+        "image": "https://cdn.worldvectorlogo.com/logos/shopify.svg"
+      },
+      {
+        "name": "Figma",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+      }
+    ]
   }
 ]

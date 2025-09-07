@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {TranslatePipe} from '@ngx-translate/core';
 interface SkillCategory {
   category: string;
-  skills: string[];
+  skills:{name:string,image:string}[];
 }
 @Component({
   selector: 'app-skills',

@@ -1,0 +1,46 @@
+.amogus-tenor{
+  position: fixed;
+  left: 14px;      /* muévelo según necesites */
+  bottom: 14px;
+  width: 96px;      /* tamaño del GIF */
+  height: 96px;
+  z-index: 9999;
+  pointer-events: none;      /* para que no bloquee clics debajo */
+}
+.amogus-tenor .tenor-gif-embed,
+.amogus-tenor iframe{
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  border-radius: 10px;       /* opcional */
+}
+@media (max-width: 480px){
+  .amogus-tenor{ bottom: 80px; } /* súbelo si choca con el botón de WhatsApp */
+}
+@media (prefers-reduced-motion: reduce){
+  .amogus-tenor{ display: none; } /* accesibilidad */
+}
+
+.amogus-tenor{
+  position: fixed;
+  left: 14px;         /* o right: 14px; si prefieres */
+  bottom: 14px;
+  width: 96px;        /* controla solo el ancho */
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.amogus{
+  display:block;
+  width: 100%;
+  height: auto;       /* evita deformar si el GIF no es exactamente cuadrado */
+  border-radius: 10px;/* opcional */
+}
+
+@media (max-width: 480px){
+  .amogus-tenor{ bottom: 80px; } /* súbelo si choca con el botón de WhatsApp */
+}
+
+@media (prefers-reduced-motion: reduce){
+  .amogus-tenor{ display: none; }
+}
